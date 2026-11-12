@@ -1,0 +1,13 @@
+PATIL NEO OTT - VIDEO UPLOAD SETUP
+
+1) Cloudinary.com वर account तयार कर.
+2) Dashboard मधून Cloud Name, API Key आणि API Secret घे.
+3) backend folder मधील .env.example ची copy करून .env नाव दे.
+4) .env मध्ये MongoDB चे MONGO_URI आणि JWT_SECRET भरा. तसेच CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET भरा.
+5) API Secret कोणालाही पाठवू नको आणि GitHub वर upload करू नको.
+6) backend folder मध्ये npm install आणि नंतर npm start चालव.
+7) Admin account ने login करून Admin Panel > Movie / TV Show उघड. Gallery मधून MP4/video निवडून upload कर.
+
+एका video ची सुरुवातीची मर्यादा 100 MB आहे. Video Cloudinary मध्ये save होतो आणि त्याची URL MongoDB मध्ये जाते.
+
+टीप: MongoDB व Cloudinary credentials भरल्याशिवाय upload चालणार नाही. फक्त स्वतःचे किंवा परवानगी असलेले videos upload कर.
